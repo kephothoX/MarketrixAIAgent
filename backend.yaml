@@ -1,0 +1,8 @@
+runtime: python313
+service: backend
+entrypoint: uvicorn -b :$PORT main:app
+
+
+runtime_config:
+    operating_system: "ubuntu22"
+    runtime_version: "3.13"
