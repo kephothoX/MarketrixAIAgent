@@ -7,7 +7,7 @@ adk_version: 1.7.0
 server: main.py
 agent: engine/agent.py
 ---
-# Marketrix marketing Agent
+# Marketrix Market Insights Agent
 
 A comprehensive marketing agent leveraging [QLoo](https://www.qloo.com/)
 
