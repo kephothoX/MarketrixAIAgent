@@ -115,7 +115,7 @@ def get_response_from_llm_backend(
 if __name__ == "__main__":
     app = gr.ChatInterface(
         get_response_from_llm_backend,
-        title="Marketrix Marketing Agent ",
+        title="Marketrix Market Insights Agent ",
         description="A marketing agent that gives actionable insights across different market dynamics",
         type="messages",
         multimodal=True,
