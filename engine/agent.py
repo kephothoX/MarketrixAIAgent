@@ -4,6 +4,7 @@ import warnings, logging
 from google.adk.agents import LlmAgent
 from google.adk.tools.agent_tool import AgentTool
 from google.adk.tools import LongRunningFunctionTool
+from google.adk.tools import google_search
 
 
 # from subagents.marketrix_insights_agent import marketrix_insights_agent
@@ -57,6 +58,7 @@ root_agent = LlmAgent(
     For tags, parameters, signals, filters and entities, use the qloo_documentation_agent to come up with relevant tags, parameters, signals, filters and entities based on user query, then use them with other tools to complete users request.
     """,
     tools=[
+        google_search,
         LongRunningFunctionTool(func=getEntitiesByName),
         LongRunningFunctionTool(func=getEntitiesByID),
         LongRunningFunctionTool(func=getTrendingData),
